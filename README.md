@@ -1,1 +1,1 @@
-This is a sudoku solver using the backtracking algorithm. I am working on a GUI to visually play the game as well.
+This is a sudoku solver using the backtracking algorithm. It includes a GUI to play the game aswell!
