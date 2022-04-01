@@ -1,7 +1,7 @@
 # GUI.py
 # RUN THIS FILE
 import pygame
-from solver import solve, valid
+from backtracking import solve, valid_board
 import time
 pygame.font.init()
 
@@ -38,7 +38,7 @@ class Grid:
             self.cubes[row][col].set(val)
             self.update_model()
 
-            if valid(self.model, val, (row,col)) and solve(self.model):
+            if valid_board(self.model, val, (row,col)) and solve(self.model):
                 return True
             else:
                 self.cubes[row][col].set(0)
